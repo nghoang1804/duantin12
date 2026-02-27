@@ -1,103 +1,113 @@
-/* Reset cơ bản */
+/* Font & nền */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f9;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
 }
 
 /* Header */
 header {
-    background-color: #2c3e50;
+    background: linear-gradient(to right, #1565c0, #42a5f5);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
-/* Menu điều hướng */
+/* Menu */
 nav {
-    background-color: #34495e;
-    padding: 10px;
+    background-color: #0d47a1;
     text-align: center;
+    padding: 12px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #f1c40f;
+    color: yellow;
+    font-size: 18px;
 }
 
 /* Section */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Hình ảnh */
+/* Ảnh */
 img {
-    margin-top: 10px;
-    border-radius: 8px;
+    width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
 
 /* Bảng */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
-}
-
-table, th, td {
-    border: 1px solid #ccc;
+    margin-top: 20px;
 }
 
 th {
-    background-color: #2c3e50;
+    background-color: #1976d2;
     color: white;
     padding: 10px;
 }
 
 td {
-    padding: 8px;
+    padding: 10px;
     text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 /* Form */
 input, select, textarea {
-    padding: 8px;
     width: 100%;
-    max-width: 400px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #2c3e50;
+    background-color: #1565c0;
     color: white;
+    padding: 12px 20px;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #f1c40f;
-    color: black;
+    background-color: #0d47a1;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background-color: #2c3e50;
-    color: white;
     padding: 15px;
-    margin-top: 20px;
+    background-color: #1565c0;
+    color: white;
+    margin-top: 30px;
 }
-
