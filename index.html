@@ -39,7 +39,14 @@
 
 <section>
     <h2>Hình ảnh kỉ niệm</h2>
-    <img src="images/anh1.jpg" alt="Kỉ niệm lớp 12" width="300">
+    <div class="slideshow">
+    <img class="slide" src="images/anh1.jpg">
+    <img class="slide" src="images/anh5.jpg">
+    <img class="slide" src="images/anh6.jpg">
+    <img class="slide" src="images/anh7.jpg">
+    <img class="slide" src="images/anh8.jpg">
+    <img class="slide" src="images/anh9.jpg">
+</div>
 </section>
 
 <section>
@@ -92,4 +99,36 @@
 
 </body>
 </html>
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 16s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+.slide:nth-child(4) { animation-delay: 12s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 
