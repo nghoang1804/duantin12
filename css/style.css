@@ -266,3 +266,65 @@ margin-left:10px;
 input[type="checkbox"]{
 margin-left:10px;
 }
+
+/* FORM ĐĂNG KÝ */
+
+.form-dangki{
+max-width:800px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+font-size:18px;
+}
+
+.form-dangki input[type="text"],
+.form-dangki select,
+.form-dangki textarea{
+width:100%;
+padding:12px;
+font-size:16px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.option-group{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-bottom:10px;
+}
+
+.option{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:17px;
+}
+
+.option input{
+transform:scale(1.2);
+}
+
+.form-button{
+margin-top:10px;
+display:flex;
+gap:10px;
+}
+
+.form-button button{
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.form-button button[type="submit"]{
+background:#0a7ea4;
+color:white;
+}
+
+.form-button button[type="reset"]{
+background:#ddd;
+}
