@@ -165,3 +165,27 @@ background:#111;
 color:white;
 margin-top:40px;
 }
+/* SLIDESHOW TRANG CHỦ */
+
+.slideshow{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:20px;
+}
+
+.slide{
+width:160px;
+height:110px;
+object-fit:cover;
+border-radius:10px;
+opacity:0.5;
+transform:scale(0.9);
+transition:0.5s;
+}
+
+.slide.active{
+opacity:1;
+transform:scale(1.2);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
