@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Dang ky tham gia</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Đăng ký tham gia</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Form đăng ký tham gia ngày hội tri ân</h1>
+<h1>Form đăng ký tham gia ngày hội tri ân</h1>
 </header>
 
 <nav>
-    <a href="index.html">Trang chủ</a> |
-    <a href="dangki.html">Đăng ký</a> |
-    <a href="hoatdong.html">Hoạt động</a>
+<a href="index.html">Trang chủ</a>
+<a href="dangki.html">Đăng ký</a>
+<a href="hoatdong.html">Hoạt động</a>
 </nav>
 
-<section>
-    <h2>Thông tin cá nhân</h2>
+<section class="card">
 
-    <form>
-        <label>Họ và tên:</label><br>
-        <input type="text" name="hoten" required>
-        <br><br>
+<h2>Thông tin cá nhân</h2>
 
-        <label>Lớp:</label><br>
-        <select name="lop">
-            <option>12TN1</option>
-            <option>12TN2</option>
-            <option>12TN3</option>
-            <option>12TN4</option>
-            <option>12TN5</option>
-            <option>12TN6</option>
-            <option>12TN7</option>
-            <option>12TN8</option>
-            <option>12HS1</option>
-            <option>12HS2</option>
-            <option>12L</option>
-            <option>12T</option>
-            <option>12XH1</option>
-            <option>12XH2</option>
-            <option>12CV</option>
-            <option>12CL</option>
-            <option>12CT</option>
-            <option>12CA</option>
-            <option>12CH</option>
-        </select>
-        <br><br>
+<form class="form-dangki">
 
-        <label>Giới tính:</label><br>
+<label>Họ và tên:</label>
+<input type="text" name="hoten" placeholder="Nhập họ và tên..." required>
+
+<label>Lớp:</label>
+<select name="lop">
+<option>12TN1</option>
+<option>12TN2</option>
+<option>12TN3</option>
+<option>12TN4</option>
+<option>12TN5</option>
+<option>12TN6</option>
+<option>12TN7</option>
+<option>12TN8</option>
+<option>12HS1</option>
+<option>12HS2</option>
+<option>12L</option>
+<option>12T</option>
+<option>12XH1</option>
+<option>12XH2</option>
+<option>12CV</option>
+<option>12CL</option>
+<option>12CT</option>
+<option>12CA</option>
+<option>12CH</option>
+</select>
+
+<label>Giới tính:</label>
+
+<div class="option-group">
 
 <label class="option">
 <input type="radio" name="gioitinh"> Nam
@@ -59,9 +62,11 @@
 <input type="radio" name="gioitinh"> Nữ
 </label>
 
-<br><br>
+</div>
 
-<label>Hoạt động muốn tham gia:</label><br>
+<label>Hoạt động muốn tham gia:</label>
+
+<div class="option-group">
 
 <label class="option">
 <input type="checkbox" name="hd"> Chụp ảnh kỉ yếu
@@ -75,22 +80,24 @@
 <input type="checkbox" name="hd"> Trò chơi tập thể
 </label>
 
-        <label>Lời nhắn gửi:</label><br>
-        <textarea name="loinhan" rows="4" cols="40"></textarea>
-        <br><br>
+</div>
 
-        <button type="submit">Gửi đăng ký</button>
-        <button type="reset">Nhập lại</button>
+<label>Lời nhắn gửi:</label>
 
-    </form>
+<textarea name="loinhan" placeholder="Nhập lời nhắn..." rows="5"></textarea>
+
+<div class="form-button">
+<button type="submit">Gửi đăng ký</button>
+<button type="reset">Nhập lại</button>
+</div>
+
+</form>
+
 </section>
 
 <footer>
-    <p>Dự án Tin học 12 – Kiểm tra giữa kì 2</p>
+<p>Dự án Tin học 12 – Kiểm tra giữa kì 2</p>
 </footer>
 
 </body>
 </html>
-
-
-
