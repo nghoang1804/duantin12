@@ -1,247 +1,199 @@
-/* ===== Font & Background ===== */
+/* ===== RESET ===== */
 
 body{
-    font-family:'Segoe UI',sans-serif;
-    margin:0;
-    padding:0;
-    background:linear-gradient(to right,#e3f2fd,#ffffff);
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(to right,#e3f2fd,#ffffff);
+color:#333;
 }
 
 
-/* ===== Header ===== */
+/* ===== HEADER ===== */
 
 header{
-    background:linear-gradient(to right,#1565c0,#42a5f5);
-    color:white;
-    text-align:center;
-    padding:30px;
-    font-size:24px;
-    letter-spacing:1px;
-    animation:drop 1s ease;
+background:linear-gradient(to right,#1565c0,#42a5f5);
+color:white;
+text-align:center;
+padding:40px 20px;
 }
 
-@keyframes drop{
-
-0%{
-transform:translateY(-50px);
-opacity:0;
+header h1{
+margin:0;
+font-size:36px;
 }
 
-100%{
-transform:translateY(0);
-opacity:1;
-}
-
+header p{
+margin-top:10px;
+font-size:18px;
 }
 
 
-/* ===== Menu ===== */
+/* ===== MENU ===== */
 
 nav{
-    background-color:#0d47a1;
-    text-align:center;
-    padding:12px;
-    position:sticky;
-    top:0;
-    z-index:1000;
+background:#0d47a1;
+text-align:center;
+padding:14px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:bold;
-    transition:0.3s;
+color:white;
+text-decoration:none;
+margin:0 25px;
+font-weight:bold;
+font-size:16px;
+transition:0.3s;
 }
 
 nav a:hover{
-    color:yellow;
-    font-size:18px;
+color:yellow;
 }
 
 
-/* ===== Banner ===== */
+/* ===== BANNER ===== */
 
 .banner{
-    position:relative;
-    width:85%;
-    margin:30px auto;
+position:relative;
+width:85%;
+margin:30px auto;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
 .banner img{
-    width:100%;
-    height:400px;
-    object-fit:cover;
-    border-radius:15px;
+width:100%;
+height:350px;
+object-fit:cover;
+filter:brightness(70%);
 }
 
 .banner-text{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    color:white;
-    text-align:center;
-    background:rgba(0,0,0,0.4);
-    padding:20px 40px;
-    border-radius:10px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+text-align:center;
+}
+
+.banner-text h2{
+font-size:40px;
+margin:0;
+}
+
+.banner-text p{
+font-size:20px;
+margin-top:10px;
 }
 
 
-/* ===== Section ===== */
+/* ===== CARD SECTION ===== */
 
-section{
-    background:white;
-    margin:30px auto;
-    padding:25px;
-    width:85%;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+.card{
+background:white;
+width:85%;
+margin:30px auto;
+padding:30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h2{
+margin-top:0;
+color:#1565c0;
 }
 
 
-/* ===== Images ===== */
+/* ===== LIST ===== */
 
-img{
-    width:300px;
-    border-radius:15px;
+ul{
+padding-left:20px;
+line-height:1.8;
 }
 
 
-/* ===== Table ===== */
+/* ===== SLIDESHOW ===== */
+
+.slideshow{
+position:relative;
+width:350px;
+height:450px;
+margin:30px auto;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+animation:fade 20s infinite;
+}
+
+.slide:nth-child(1){animation-delay:0s;}
+.slide:nth-child(2){animation-delay:4s;}
+.slide:nth-child(3){animation-delay:8s;}
+.slide:nth-child(4){animation-delay:12s;}
+.slide:nth-child(5){animation-delay:16s;}
+
+@keyframes fade{
+
+0%{opacity:0;}
+5%{opacity:1;}
+25%{opacity:1;}
+30%{opacity:0;}
+100%{opacity:0;}
+
+}
+
+
+/* ===== TABLE ===== */
 
 table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
 }
 
 th{
-    background-color:#1976d2;
-    color:white;
-    padding:10px;
+background:#1976d2;
+color:white;
+padding:12px;
 }
 
 td{
-    padding:10px;
-    text-align:center;
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
 }
 
 tr:nth-child(even){
-    background-color:#f2f2f2;
+background:#f2f2f2;
 }
 
 
-/* ===== Form ===== */
+/* ===== LINK ===== */
 
-input,select,textarea{
-    width:100%;
-    padding:10px;
-    margin:8px 0;
-    border-radius:8px;
-    border:1px solid #ccc;
+a{
+color:#1565c0;
 }
 
-button{
-    background-color:#1565c0;
-    color:white;
-    padding:12px 20px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover{
-    background-color:#0d47a1;
+a:hover{
+text-decoration:underline;
 }
 
 
-/* ===== Footer ===== */
+/* ===== FOOTER ===== */
 
 footer{
-    text-align:center;
-    padding:15px;
-    background-color:#1565c0;
-    color:white;
-    margin-top:30px;
-}
-
-
-/* ===== Gallery ảnh ===== */
-
-.gallery{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:40px;
-    margin-top:30px;
-}
-
-
-/* ảnh mặc định */
-
-.gallery img{
-    width:150px;
-    height:240px;
-    object-fit:cover;
-    border-radius:15px;
-    opacity:0.4;
-    transform:scale(0.9);
-}
-
-
-/* animation từng ảnh */
-
-.gallery img:nth-child(1){
-animation:focus 25s infinite 0s;
-}
-
-.gallery img:nth-child(2){
-animation:focus 25s infinite 5s;
-}
-
-.gallery img:nth-child(3){
-animation:focus 25s infinite 10s;
-}
-
-.gallery img:nth-child(4){
-animation:focus 25s infinite 15s;
-}
-
-.gallery img:nth-child(5){
-animation:focus 25s infinite 20s;
-}
-
-
-/* animation highlight */
-
-@keyframes focus{
-
-0%{
-transform:scale(0.9);
-opacity:0.4;
-}
-
-10%{
-transform:scale(1.5);
-opacity:1;
-box-shadow:0 15px 40px rgba(0,0,0,0.4);
-}
-
-20%{
-transform:scale(1.5);
-opacity:1;
-}
-
-30%{
-transform:scale(0.9);
-opacity:0.4;
-}
-
-100%{
-transform:scale(0.9);
-opacity:0.4;
-}
-
+margin-top:40px;
+background:#1565c0;
+color:white;
+text-align:center;
+padding:18px;
+font-size:14px;
 }
