@@ -192,3 +192,48 @@ transition:1s;
 opacity:1;
 transform:translateY(0);
 }
+
+/* TĂNG CỠ CHỮ FORM */
+section h2{
+font-size:28px;
+margin-bottom:20px;
+}
+
+label{
+font-size:20px;
+font-weight:600;
+}
+
+/* TĂNG KÍCH THƯỚC Ô NHẬP */
+input[type="text"],
+select,
+textarea{
+font-size:18px;
+padding:14px;
+height:50px;
+border-radius:8px;
+}
+
+/* TEXTAREA CAO HƠN */
+textarea{
+height:120px;
+}
+
+/* RADIO & CHECKBOX TO HƠN */
+input[type="radio"],
+input[type="checkbox"]{
+transform:scale(1.5);
+margin-right:8px;
+}
+
+/* CHỮ BÊN CẠNH RADIO/CHECKBOX */
+section{
+font-size:18px;
+}
+
+/* NÚT BẤM TO HƠN */
+button{
+font-size:18px;
+padding:12px 25px;
+margin-top:10px;
+}
